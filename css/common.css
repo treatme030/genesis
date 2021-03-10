@@ -1,0 +1,24 @@
+
+html {
+    font-size: 10px;
+}
+body {
+    font-family: "Noto Sans", sans-serif;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: normal;
+    color: rgb(17, 17, 17);
+}
+
+div,
+ul,
+li {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input,
+button {
+    border: none;
+}
