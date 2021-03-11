@@ -12,3 +12,10 @@ ol {
 a {
     text-decoration: none;
 }
+
+button,
+input {
+    border: none;
+    background: none;
+    cursor: pointer;
+}

@@ -4,7 +4,7 @@ html {
 }
 body {
     font-family: "Noto Sans", sans-serif;
-    line-height: 1.5;
+    line-height: 1.32;
     font-weight: 500;
     letter-spacing: normal;
     color: rgb(17, 17, 17);
@@ -16,9 +16,4 @@ li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-input,
-button {
-    border: none;
 }
