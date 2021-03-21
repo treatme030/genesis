@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="제네시스(Genesis)">
+    <meta name="description" content="'제네시스 G70, G80, GV70, GV80, G90, G90L, 제네시스 차량 가격 및 정보, 할인이벤트 등 다양한 정보를 확인하세요 | 제네시스 공식사이트.">
+    <meta name="application-name" content="genesis.com">
+    <link rel="icon" href="">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <title>제네시스(GENESIS) G70, G80, GV70, GV80, G90</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/brand.css">
+</head>
+<body onscroll="scrollEvent();">
+    <header>
+        <div class="gnb">
+            <ul class="gnb-left">
+                <li class="gnb-logo">
+                    <a href="">
+                    <img src="genesis/img/logo.png" alt="">
+                    </a>
+                </li>
+                <li><a href="">모델</a></li>
+                <li><a href="">구매</a></li>
+                <li><a href="">체험</a></li>
+                <li><a href="">멤버스</a></li>
+                <li><a href="">제네시스</a></li>
+            </ul>
+            <div class="gnb-right">
+                <div class="private-nav">
+                    <ul>
+                        <li><a href="">고객센터</a></li>
+                        <li><a href="">마이 페이지</a></li>
+                    </ul>
+                </div>
+                <div class="util-search">
+                    <button class="search" type="button"></button>
+                </div>
+                <div class="util-sitemap">
+                    <button  class="btn-toggle" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="30px" height="30px"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>                    
+                    </button>
+                </div>
+            </div>   
+            
+        </div>
+    </header>
+    <main>
+        <!-- Hero -->
+        <div id="hero" class="hero">
+            <video class="hero-video" autoplay muted loop>
+                <source src="video/genesis-kr-the-brand-key-visual-01-desktop-2560x900-kr.webm">
+            </video>
+            <div class="hero-text-wrap">
+                <div class="hero-text">
+                    <h2 class="hero-text-title">GENESIS</h2>
+                    <p class="hero-text-subtitle">제네시스라는 이름에는 열망의 창조,<br>
+                        새로운 시작과 긍정적인 변화를 향한<br> 
+                        우리의 염원이 담겨 있습니다.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Vision -->
+        <div class="vision-wrap">
+            <div id="vision" class="vision-inner">
+                <div class="vision-text-box">
+                    <div class="vision-text">
+                        <p>OUR VISION AND MISSION</p>
+                        <p>우리는 자신만의 취향과 안목을 가진 사람들을 위해 최상의<br> 
+                            자동차를 만들고, 그를 통해 삶의 긍정적인 변화를 만들어내는<br> 
+                            것을 목표로 하고 있습니다.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    </body>
+
+    <script>
+        let scrollH = document.documentElement.scrollTop,
+            screenH = document.documentElement.clientHeight,
+            aniH = document.getElementById('vision').offsetTop;
+            console.log(screenH);
+        function scrollEvent(){
+            scrollH = document.documentElement.scrollTop;
+            console.log(scrollH, aniH);
+            if(scrollH > aniH - screenH){
+                document.querySelector('.vision-inner').style = 'animation: zoomIn 2s both;';
+                document.querySelectorAll('.vision-text p')[0].style = 'animation: slideUp 1s 0.8s both;';
+                document.querySelectorAll('.vision-text p')[1].style = 'animation: slideUp 1s 1s both;'; 
+            }
+        }    
+
+    </script>
+</html>

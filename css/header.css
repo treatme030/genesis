@@ -1,79 +1,114 @@
-.gnb-down {
-    position: relative;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(17, 17, 17);
+    border-bottom: 1px solid #1e1e1e;
+    z-index: 10;
+}
+.gnb {
     max-width: 1920px;
-    height: 60px;
+    margin: 0 auto;
+    height: 6.9rem;
+    padding: 0 14rem;
     display: flex;
     justify-content: space-between;
-    padding: 0 38px 0 36px;
-}
-
-.nav-box,
-.acct-btn {
-    display: flex;
     align-items: center;
 }
 
-.logo {
-    padding: 0 12px;
+.gnb a {
+    display: inline-block;
+    font-family: "genesis-head-regular";
+    font-size: 1.5rem;
+    line-height: 6.9rem;
+    color: #fff;
+    transition: .2s;
 }
 
-.nav-box li {
-    height: 100%;
-}
-.nav-box a {
-    display: block;
-    font-size: 1.6rem;
-    padding: 16px 12px 18px 12px;
-    color: rgb(17, 17, 17);
+.gnb a:hover {
+    color: #ad7b61;
 }
 
-.nav-box a:hover {
-    border-bottom: 2px solid rgb(17, 17, 17);
-}
-
-.acct-btn a {
-    display: flex;
-    align-items: center;
-    padding: 6px;
-    border-radius: 50%;
-}
-
-.acct-btn li:first-child a {
-    margin-right: 12px;
-}
-
-.search {
-    position: absolute;
-    width: 180px;
+.gnb-left {
     height: 100%;
     display: flex;
     align-items: center;
-    right: 142px;
 }
 
-.search input {
+.gnb-left li {
+    height: 100%;
+}
+
+.gnb-left li~li {
+    margin-right: 5.8rem;
+}
+
+.gnb-left .gnb-logo {
+    width: 12.8rem;
+    margin-right: 7rem;
+}
+
+.gnb-left a img {
     width: 100%;
-    height: 40px;
-    border-radius: 20px;
-    background-color: rgb(245, 245, 245);
+    vertical-align: middle;
 }
 
-/* input 안에 글씨 디자인 */
-::placeholder {
-    padding: 8px 48px;
-    font-size: 1.6rem;
-    opacity: 0.5;
+.gnb-right {
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-.search button {
-    position: absolute;
-    top: 11px;
-    left: 1px;
-    padding: 6px;
-    border-radius: 50%;
-    background-color: rgb(245, 245, 245);
+.gnb-right .private-nav {
+    margin-right: 0.2rem;
 }
 
-.btn-group {
-    display: none;
+.gnb-right .private-nav ul {
+    display: flex;
 }
+
+.gnb-right .private-nav ul li:last-child {
+    margin-left: 2.9rem;
+}
+
+.gnb-right .private-nav ul li a {
+    font-size: 1.4rem;
+}
+
+.gnb-right .util-search {
+    margin: 0 1.8rem;
+}
+
+.gnb-right .util-search .search {
+    position: relative;
+    display: block;
+    width: 3.7rem;
+    height: 6.9rem;
+    color: rgb(255,255,255);
+}
+
+.gnb-right .search:before {
+    display: inline-block;
+    content: "";
+    width: 1.7rem;
+    height: 1.7rem;
+    background: url('../genesis/img/icon-search-small.png') no-repeat 0 0;
+    background-size: 100% auto;
+}
+
+.gnb-right .util-sitemap {
+    margin-right: -2.3rem;
+}
+
+.gnb-right .util-sitemap .btn-toggle {
+    width: 6.6rem;
+    height: 6.9rem;
+}
+
+
+
+
+
+
