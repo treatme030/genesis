@@ -51,6 +51,20 @@ body {
     animation: slideUp 2s 0.2s both;
 }
 
+.arrow-down {
+    position: absolute;
+    display: inline-block;
+    bottom: -6.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5rem;
+    height: 5rem;
+}
+
+.arrow-down img {
+    width: 100%;
+}
+
 /* Vision */
 
 .vision-wrap {
@@ -277,6 +291,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    transition: .3s;
 }
 
 .slide-list .slide img {
@@ -328,4 +343,6 @@ body {
     font-size: 1.6rem;
     line-height: 2.8rem;
     color: #ccc;
+    transition: .5s;
+
 }
