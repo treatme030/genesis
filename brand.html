@@ -62,7 +62,11 @@
                         새로운 시작과 긍정적인 변화를 향한<br> 
                         우리의 염원이 담겨 있습니다.</p>
                 </div>
+                <div class="arrow-down">
+                    <img src="genesis/img/baseline_expand_more_white_18dp.png" alt="">
+                </div>
             </div>
+            
         </div>
         <!-- Vision -->
         <div class="vision-wrap">
@@ -77,10 +81,114 @@
                 </div>
             </div>
         </div>
+        <!-- Our-Way -->
+        <div class="our-Way-wrap">
+            <div id="ourWay" class="our-Way-inner">
+                <div class="our-Way-text-box">
+                    <div class="our-Way-text">
+                        <p>OUR WAY</p>
+                        <p>새로운 길을 끊임없이, 그렇지만 사려 깊은 방식으로 탐험하는<br> 
+                        것이 진정으로 매력적인 것을 만들어내는 우리만의 방식입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Design -->
+        <div class="design-wrap">
+            <div id="design" class="design-inner">
+                <div class="design-text-box">
+                    <div class="design-text">
+                        <p>DESIGN</p>
+                        <h2>ATHLETIC ELEGANCE</h2>
+                        <p>대담하고, 진보적이면서 가장 한국적, 이 세가지 키워드가 제네시스 디자인을 정의합니다. 마치 고급<br> 
+                        식당의 쉐프처럼 역동성과 우아함을 재료로, 각 모델에 알맞는 기품있는 디자인을 선보입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Emblem -->
+        <div id="emblem" class="emblem-wrap">
+            <div class="emblem-inner">
+                <div class="emblem-video">
+                    <video muted playsinline autoplay>
+                        <source src="video/genesis-kr-the-brand-key-visual-02-mobile-1920x1080-kr.mp4">
+                    </video>
+                </div>
+                <div class="emblem-text-box">
+                    <div class="emblem-text">
+                        <p>DESIGN</p>
+                        <h2>GENESIS EMBLEM</h2>
+                        <p>첫 인상을 결정하는 브랜드 정체성, 바로 엠블럼 속에 제네시스의 모든 얼굴이 담겨 있습니다.<br> 
+                            크레스트 그릴은 엠블럼의 방패모양에서 비롯되며, 쿼드램프는 비상하는 날개를 형상화합니다.</p>
+                    </div>
+                </div>
+                <div class="play-btn">
+                    <button type="button"></button>
+                </div>
+            </div>
+        </div>
+        <!-- Glance -->
+        <div class="glance-wrap">
+            <div id="glance" class="glance-inner">
+                <div class="glance-box">
+                    <div class="glance-text">
+                        <p>AT A GLANCE</p>
+                        <h2>GENESIS DESIGN</h2>
+                    </div>
+                    <div class="slide-tab-wrap">
+                        <ul class="slide-list">
+                            <li class="slide">
+                                <img src="genesis/img/genesis-kr-the-brand-tab-crestgrill_w.webp" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="genesis/img/genesis-kr-the-brand-lineup-gv80-12-desktop-1920x960-ko.webp" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="genesis/img/genesis-kr-the-brand-tab-parabolicline_w.webp" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="genesis/img/genesis-kr-the-brand-tab-beatyof_w.jpg" alt="">
+                            </li>
+                        </ul>
+                        <div class="slide-tab-box">
+                            <ul class="tab-list">
+                                <li onclick="slideDesign(0);">
+                                    <div class="tab-item">CREST GRILLE
+                                        <span class="line"></span>
+                                    </div>
+                                </li>
+                                <li onclick="slideDesign(1);">
+                                    <div class="tab-item">QUAD LAMPS
+                                        <span class="line"></span>
+                                    </div>
+                                </li>
+                                <li onclick="slideDesign(2);">
+                                    <div class="tab-item">PARABOLIC LINE
+                                        <span class="line"></span>
+                                    </div>
+                                </li>
+                                <li onclick="slideDesign(3);">
+                                    <div class="tab-item">BEAUTY OF WHITE SPACE
+                                        <span class="line"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="glance-desc-box">
+                            <p class="glance-desc">명가의 휘장에서 영감을 받은 제네시스 엠블럼은 크레스트 그릴로 진화하여 럭셔리에 대한 진정성을 나타냅니다.</p>
+                            <p class="glance-desc">승리의 염원을 담은 비상하는 날개는 쿼드램프의 TWO LINES로 적용되어 제네시스만의 독창적이고 아이코닉한 캐릭터를 완성합니다.</p>
+                            <p class="glance-desc">완벽한 실루엣을 완성하는 제네시스의 파라볼릭라인은 뒤로 갈수록 부드럽게 떨어지며 클래식카와 같은 아름다운 감성을 불어넣습니다.</p>
+                            <p class="glance-desc">한국 전통의 여백의 미를 승화한 실내 공간 디자인은 사람과 첨단 기술 사이의 완벽한 공존과 럭셔리 경험을 제공합니다.</p>                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     </body>
 
     <script>
+        //요소 offsetTop 값에 따른 텍스트 slide-up
         let scrollH = document.documentElement.scrollTop,
             screenH = document.documentElement.clientHeight,
             aniH = document.getElementById('vision').offsetTop;
@@ -89,11 +197,52 @@
             scrollH = document.documentElement.scrollTop;
             console.log(scrollH, aniH);
             if(scrollH > aniH - screenH){
-                document.querySelector('.vision-inner').style = 'animation: zoomIn 2s both;';
+                document.querySelector('.vision-inner').style = 'animation: zoomOut 2s both;';
                 document.querySelectorAll('.vision-text p')[0].style = 'animation: slideUp 1s 0.8s both;';
                 document.querySelectorAll('.vision-text p')[1].style = 'animation: slideUp 1s 1s both;'; 
             }
+            if(scrollH > document.getElementById('ourWay').offsetTop - screenH){
+                document.querySelector('.our-Way-inner').style = 'animation: zoomOut 2s both;';
+                document.querySelectorAll('.our-Way-text p')[0].style = 'animation: slideUp 1s 0.8s both;';
+                document.querySelectorAll('.our-Way-text p')[1].style = 'animation: slideUp 1s 1s both;'; 
+            }
+            if(scrollH > document.getElementById('design').offsetTop - screenH){
+                document.querySelector('.design-inner').style = 'animation: zoomOut 2s both;';
+                document.querySelector('.design-text p:first-child').style = 'animation: slideUp 1s 0.8s both;';
+                document.querySelector('.design-text h2').style = 'animation: slideUp 1s 1s both;'; 
+                document.querySelector('.design-text p:last-child').style = 'animation: slideUp 1s 1.2s both;'; 
+            }
+            console.log(document.getElementById('emblem').offsetTop);
+            if(scrollH > document.getElementById('emblem').offsetTop - screenH){
+                document.querySelector('.emblem-text p:first-child').style = 'animation: slideUp 1s both;';
+                document.querySelector('.emblem-text h2').style = 'animation: slideUp 1s 0.2s both;'; 
+                document.querySelector('.emblem-text p:last-child').style = 'animation: slideUp 1s 0.4s both;'; 
+            }
         }    
+
+        //EMBLEM slide
+        let slideDesignState = 0;
+        let slide = document.getElementsByClassName('slide');
+        let slideDesc = document.getElementsByClassName('glance-desc');
+        let line = document.getElementsByClassName('line');
+        let tabItem = document.getElementsByClassName('tab-item');
+
+        function slideDesign(target){
+            for(let i = 0; i < slide.length; i++){
+                if(target !== i){
+                    slide[i].style = 'opacity:0; z-index:2; transition: .5s;';
+                    slideDesc[i].style = 'display: none;';
+                    line[i].style = 'background-color: #333; transition: .5s;';
+                    tabItem[i].style = 'color: #808080;';
+                } else {
+                    slide[i].style = 'opacity:1; z-index:5; transition: .5s;';
+                    slideDesc[i].style = 'display: block;';
+                    line[i].style = 'background-color: #ad7b61; transition: .5s;';
+                    tabItem[i].style = 'color: #ad7b61;';
+                }
+            }
+        }
+        slideDesign(0);//초기값
 
     </script>
 </html>

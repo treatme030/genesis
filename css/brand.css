@@ -1,3 +1,7 @@
+body {
+    background-color: #111;
+}
+
 .hero {
     position: relative;
     max-width: 2560px;
@@ -50,7 +54,6 @@
 /* Vision */
 
 .vision-wrap {
-    background-color: #111;
     padding-top: 24rem;
     overflow: hidden;
 }
@@ -62,7 +65,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('../genesis/img/genesis-kr-the-brand-vision-and-mission-04-desktop-1920x960-ko.jpg');
-
 }
 
 .vision-text-box {
@@ -84,3 +86,246 @@
     margin: 4.8rem 0 1.6rem 0;
 }
 
+.our-Way-wrap {
+    overflow: hidden;
+}
+
+.our-Way-inner {
+    height: 50vw;
+    max-height: 1080px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../genesis/img/genesis-kr-the-brand-our-way-04-desktop-1920x960-ko.webp');
+}
+
+.our-Way-text-box {
+    font-family: "genesis-head-light", sans-serif;
+    margin: 0 14rem;
+    padding-top: 9.8rem;
+    display: flex;
+    justify-content: flex-start;
+    color: rgb(255,255,255);
+}
+
+.our-Way-text p:first-child {
+    font-size: 1.8rem;
+    margin-bottom: 1.1rem;
+}
+
+.our-Way-text p:last-child {
+    font-size: 2.6rem;
+    margin: 4.8rem 0 1.6rem 0;
+}
+
+.design-inner {
+    height: 50vw;
+    max-height: 1080px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../genesis/img/genesis-kr-the-brand-genesis-design-05-desktop-1920x960-ko.webp');
+}
+
+.design-text-box {
+    font-family: "genesis-head-light", sans-serif;
+    margin: 0 14rem;
+    padding-top: 9.8rem;
+    display: flex;
+    justify-content: flex-start;
+    color: rgb(255,255,255);
+}
+
+.design-text-box h2 {
+    font-family: "genesis-head-light", sans-serif;
+    font-weight: 400;
+    font-size: 5.4rem;
+    line-height: 1.148;
+    margin-bottom: 4.1rem;
+}
+
+.design-text p:first-child {
+    font-size: 1.8rem;
+    margin-bottom: 1.1rem;
+}
+
+.design-text p:last-child {
+    font-family: "genesis-text", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    margin-top: 1.8rem;
+}
+
+.emblem-inner {
+    position: relative;
+}
+
+.emblem-wrap .emblem-video {
+    position: relative;
+    max-width: 1920px;
+}
+
+.emblem-wrap .emblem-video video {
+    width: 100%;
+    object-fit: contain;
+}
+
+.emblem-wrap .emblem-text-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 14rem;
+    padding-top: 9.6rem;
+    color: rgb(255,255,255);
+}
+
+.emblem-text-box h2 {
+    font-family: "genesis-head-light", sans-serif;
+    font-weight: 400;
+    font-size: 5.4rem;
+    line-height: 1.148;
+    margin-bottom: 4.1rem;
+    color: #ad7b61;
+}
+
+.emblem-text p:first-child {
+    font-size: 1.8rem;
+    margin-bottom: 1.1rem;
+}
+
+.emblem-text p:last-child {
+    font-family: "genesis-text", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    margin-top: 1.8rem;
+}
+
+.emblem-inner .play-btn {
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
+}
+
+.emblem-inner .play-btn button {
+    width: 6.4rem;
+    height: 6.4rem;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.emblem-inner .play-btn button:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url('../genesis/img/ico-play-default.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.glance-wrap {
+    width: 100%;
+}
+
+.glance-wrap .glance-inner {
+    padding: 24rem 0;
+    max-height: 1080px;
+}
+
+.glance-wrap .glance-inner .glance-box {
+    padding: 0 14rem;
+}
+
+.glance-wrap .glance-inner .glance-box .glance-text {
+    font-family: "genesis-head-light", sans-serif;
+    color: rgb(255,255,255);
+    text-align: center;
+}
+
+.glance-wrap .glance-inner .glance-box .glance-text p {
+    font-size: 1.8rem;
+    letter-spacing: -0.025em;
+}
+
+.glance-wrap .glance-inner .glance-box .glance-text h2 {
+    font-size: 4.2rem;
+    font-weight: normal;
+    letter-spacing: -0.025em;
+    margin-top: 1.1rem;
+}
+
+.glance-wrap .glance-inner .glance-box .slide-tab-wrap {
+    position: relative;
+    margin-top: 6.6rem;
+    padding-top: 43.9%;
+}
+
+.glance-wrap .glance-inner .glance-box .slide-tab-wrap .slide-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 43.9%;
+    overflow: hidden;
+}
+
+.slide-list .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-list .slide img {
+    object-fit: contain;
+}
+
+.glance-wrap .glance-inner .glance-box .slide-tab-box {
+    font-family: "genesis-text", sans-serif;
+    margin-top: 1.9rem;
+    padding: 0.5rem;
+} 
+
+.glance-wrap .glance-inner .glance-box .slide-tab-box .tab-list {
+    display: flex;
+    border-bottom: 1px solid #333;
+}
+
+.glance-wrap .glance-inner .glance-box .slide-tab-box .tab-list li {
+    flex: 1;
+    cursor: pointer;
+}
+
+.slide-tab-box .tab-list div {
+    position: relative;
+    font-family: "genesis-head", sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: -0.019em;
+    color: #808080;
+    padding: 1.8rem 1.8rem 1.8rem 0;
+    transition: .2s;
+}
+
+.slide-tab-box .tab-list div:hover {
+    color: #ad7b61;
+}
+
+.slide-tab-box .tab-list .line {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 0.1rem;
+    background: #333;
+}
+
+.slide-tab-wrap .glance-desc-box p {
+    padding-top: 4.3rem;
+    font-family: 'genesis-text', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: #ccc;
+}
