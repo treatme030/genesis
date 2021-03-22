@@ -5,7 +5,7 @@
 }
 
 @font-face {
-    font-family: "genesis-Head-office";
+    font-family: "genesis-head-office";
     font-weight: 400;
     src: url(../font/GenesisSansHeadOffice-Regular.woff2) format("woff2");
 }
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-    font-family: "genesis-head-regular";
+    font-family: "genesis-head";
     font-weight: 400;
     src: url(../font/GenesisSansHeadKRRegular.woff2) format("woff2");
 }
@@ -45,7 +45,7 @@
     }
 }
 
-@keyframes zoomIn {
+@keyframes zoomOut {
     0% {
         opacity: 0;
         transform: scale(1.1);
