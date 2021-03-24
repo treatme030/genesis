@@ -132,6 +132,10 @@ body {
     margin: 4.8rem 0 1.6rem 0;
 }
 
+.design-wrap {
+    overflow: hidden;
+}
+
 .design-inner {
     height: 50vw;
     max-height: 1080px;
@@ -305,6 +309,7 @@ body {
 } 
 
 .glance-wrap .glance-inner .glance-box .slide-tab-box .tab-list {
+    position: relative;
     display: flex;
     border-bottom: 1px solid #333;
 }
@@ -314,8 +319,9 @@ body {
     cursor: pointer;
 }
 
-.slide-tab-box .tab-list div {
+.slide-tab-box .tab-list .tab-item {
     position: relative;
+    display: block;
     font-family: "genesis-head", sans-serif;
     font-size: 1.6rem;
     letter-spacing: -0.019em;
@@ -324,25 +330,489 @@ body {
     transition: .2s;
 }
 
-.slide-tab-box .tab-list div:hover {
+.tab-item span {
+    display: block;
+}
+
+.slide-tab-box .tab-list .tab-item span:hover {
     color: #ad7b61;
 }
 
-.slide-tab-box .tab-list .line {
+/* 전체 ul박스에 언더라인 이동 */
+.line {
     position: absolute;
+    width: 25%;
     bottom: 0;
     right: 0;
     left: 0;
     height: 0.1rem;
-    background: #333;
+    background: #ad7b61;
+    transition: .5s;
+}
+
+.slide-tab-wrap .glance-desc-box {
+    position: relative;
+    height: 71px;
 }
 
 .slide-tab-wrap .glance-desc-box p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     padding-top: 4.3rem;
     font-family: 'genesis-text', sans-serif;
     font-size: 1.6rem;
     line-height: 2.8rem;
     color: #ccc;
     transition: .5s;
+}
+
+/* MODELS & LINE-UP */
+.models1-wrap {
+    overflow: hidden;
+}
+
+.models1-inner {
+    height: 50vw;
+    max-height: 1080px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../genesis/img/genesis-kr-the-brand-lineup-10-desktop-1920x960-ko.webp');
+}
+
+.models1-content {
+    position: relative;
+    height: 100%;
+    margin: 0 14rem; 
+}
+
+.models1-text-box {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "genesis-head-light", sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    color: rgb(255,255,255);
+}
+
+.models1-text p:first-child {
+    font-family: "genesis-head-light", sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1.1rem;
+}
+
+.models1-text p:last-child {
+    font-size: 2.6rem;
+    margin: 4.8rem 0 1.6rem 0;
+}
+
+/* LIFESTYLE BRAND */
+.lifestyle-wrap {
+    overflow: hidden;
+    padding-bottom: 24rem;
+}
+
+.lifestyle-inner {
+    height: 50vw;
+    max-height: 1080px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../genesis/img/genesis-kr-the-brand-genesis-special-moments-15-desktop-1920x960-ko-1.jpg');
+}
+
+.lifestyle-content {
+    position: relative;
+    height: 100%;
+    margin: 0 14rem; 
+}
+
+.lifestyle-text-box {
+    position: absolute;
+    top: 9.8rem;
+    font-family: "genesis-head-light", sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    color: rgb(255,255,255);
+}
+
+.lifestyle-text p:first-child {
+    font-family: "genesis-head-light", sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1.1rem;
+}
+
+.lifestyle-text p:last-child {
+    font-size: 2.6rem;
+    margin: 4.8rem 0 1.6rem 0;
+}
+
+/*Space */
+.space-wrap {
+    height: 600px;
+    padding-bottom: 24rem;
+}
+
+.space-inner {
+    height: 100%;
+    display: flex;
+}
+
+.space-img {
+    flex-basis: 63.54%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../genesis/img/genesis-kr-the-brand-experience-space-16-desktop-mobile-1220x660-ko.webp');
 
 }
+
+.space-content {
+    flex-basis: 36.46%;
+}
+
+.space-text-box {
+    height: 100%;
+    padding: 0 14rem 0 18rem;
+    color: rgb(255,255,255);
+}
+
+.space-text {
+    height: 100%;
+    padding-bottom: 7.7rem;
+    border-bottom: 1px solid #4d4d4d;
+    box-sizing: border-box;
+}
+
+.space-text-box p:first-child {
+    font-family: "genesis-head-light", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.22;
+    margin-bottom: 7.1rem;
+}
+
+.space-text-box h2 {
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 1.22;
+    letter-spacing: -.025em;
+    color: #ad7b61;
+    margin-bottom: 2.7rem;
+}
+
+.space-text-box .space-desc {
+    font-family: "genesis-head-light", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #ccc;
+}
+
+.space-btn {
+    position: relative;
+    width: 100%;
+    margin-top: 7.3rem;
+    overflow: hidden;
+}
+
+.cm-btn {
+    position: relative;
+    display: block;
+    width: 24rem;
+    height: 5.6rem;
+    font-family: 'genesis-text', sans-serif;
+    font-size: 1.6rem;
+    line-height: 5.6rem;
+    color: #fff;
+    padding: 0 4rem;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    text-align: center;
+}
+/* 자세히 보기 버튼 위에 높이가 0인 버튼을 만들고, overflow: hidden;하여 */
+/* 텍스트는 높이가 커지면 글자가 보이게 함*/
+.masker {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0;
+    background-color: #fff;
+    color: #000;
+    overflow: hidden;
+    transition: .2s;
+}
+/* 텍스트도 포지션 잡아주어 높이가 커지면 글자가 보이게 함 */
+.cm-btn .masker span {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;;
+}
+
+.cm-btn:hover .masker{
+    height: 100%;
+}
+
+/*MEMBERSHIP */
+.membership-wrap {
+    height: 600px;
+    padding-bottom: 24rem;
+}
+
+.membership-inner {
+    height: 100%;
+    display: flex;
+}
+
+.membership-img {
+    flex-basis: 63.54%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../genesis/img/genesis-kr-the-brand-experience-membership-17-desktop-mobile-1220x660-ko.webp');
+
+}
+
+.membership-content {
+    flex-basis: 36.46%;
+}
+
+.membership-text-box {
+    height: 100%;
+    padding: 0 18rem 0 14rem;
+    color: rgb(255,255,255);;
+}
+
+.membership-text {
+    height: 100%;
+    padding-bottom: 7.7rem;
+    border-bottom: 1px solid #4d4d4d;
+    box-sizing: border-box;
+}
+
+.membership-text-box p:first-child {
+    font-family: "genesis-head-light", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.22;
+    margin-bottom: 7.1rem;
+}
+
+.membership-text-box h2 {
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 1.22;
+    letter-spacing: -.025em;
+    color: #ad7b61;
+    margin-bottom: 2.7rem;
+}
+
+.membership-text-box .membership-desc {
+    font-family: "genesis-head-light", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #ccc;
+}
+
+.membership-btn {
+    position: relative;
+    width: 100%;
+    margin-top: 7.3rem;
+    overflow: hidden;
+}
+
+/*PARTNERSHIP */
+.parter-wrap {
+    height: 600px;
+    padding-bottom: 24rem;
+}
+
+.parter-inner {
+    height: 100%;
+    display: flex;
+}
+
+.parter-img {
+    flex-basis: 63.54%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../genesis/img/genesis-kr-the-brand-experience-partnership-18-desktop-mobile-1220x660-ko.jpg');
+
+}
+
+.parter-content {
+    flex-basis: 36.46%;
+}
+
+.parter-text-box {
+    height: 100%;
+    padding: 0 14rem 0 18rem;
+    color: rgb(255,255,255);
+}
+
+.parter-text {
+    height: 100%;
+    padding-bottom: 7.7rem;
+    border-bottom: 1px solid #4d4d4d;
+    box-sizing: border-box;
+}
+
+.parter-text-box p:first-child {
+    font-family: "genesis-head-light", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.22;
+    margin-bottom: 7.1rem;
+}
+
+.parter-text-box h2 {
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 1.22;
+    letter-spacing: -.025em;
+    color: #ad7b61;
+    margin-bottom: 2.7rem;
+}
+
+.parter-text-box .parter-desc {
+    font-family: "genesis-head-light", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #ccc;
+}
+
+.parter-btn {
+    position: relative;
+    width: 100%;
+    margin-top: 7.3rem;
+    overflow: hidden;
+}
+
+/* OUR JOURNEY */
+.journey-wrap {
+    overflow: hidden;
+}
+
+.journey-inner {
+    height: 50vw;
+    max-height: 1080px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../genesis/img/genesis-kr-the-brand-journey-19-desktop-1920x960-ko.jpg');
+}
+
+.journey-content {
+    position: relative;
+    height: 100%;
+    margin: 0 14rem; 
+}
+
+.journey-text-box {
+    position: absolute;
+    top: 9.8rem;
+    font-family: "genesis-head-light", sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    color: rgb(255,255,255);
+}
+
+.journey-text p:first-child {
+    font-size: 1.8rem;
+    margin-bottom: 1.1rem;
+}
+
+.journey-text p:last-child {
+    font-size: 2.6rem;
+    margin: 4.8rem 0 1.6rem 0;
+}
+
+/*JOIN US */
+.joinus-wrap {
+    padding: 24rem 0;
+}
+
+.joinus-inner {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 14rem;
+}
+
+.joinus-parallax {
+    box-sizing: content-box;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.parallax-inner {
+    position: relative;
+    width: 100%;
+}
+
+.joinus-content {
+    position: relative;
+    margin-left: 23.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.joinus-text-box {
+    width: 70%;
+    max-width: 96rem;
+    color: #fff;
+}
+
+.joinus-text-box p:first-child {
+    font-family: 'genesis-head-light', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.222;
+    margin-bottom: 4.6rem;
+}
+
+.joinus-text-box p:nth-child(2) {
+    font-family:  "genesis-text", sans-serif;
+    font-size: 4.2rem;
+    line-height: 1.476;
+}
+
+.joinus-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding-left: 2.2rem;
+    width: 28.4%;
+    display: flex;
+    align-items: center;
+}
+
+.joinus-right img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.joinus-left {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 40.666%;
+    margin-top: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
