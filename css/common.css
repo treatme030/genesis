@@ -56,6 +56,15 @@
     }
 }
 
+@keyframes lineWidth {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
 html {
     font-size: 10px;
 }
@@ -65,6 +74,7 @@ body {
     line-height: 1.32;
     color: rgb(17, 17, 17);
     word-break: keep-all;
+    background-color: #111;
 }
 
 div,
