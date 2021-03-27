@@ -830,7 +830,7 @@
         setInterval(function(){
             let nextNum = (slideState + 1) % listItem.length;
             slideDiscover(nextNum);
-            slideState++;
+            slideState = nextNum;
         }, 5000);
 
         slideDiscover(0);
