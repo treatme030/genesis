@@ -766,7 +766,7 @@
         }    
 
         //EMBLEM slide
-        let slideDesignState = 0;
+        
         let slide = document.getElementsByClassName('slide');
         let slideDesc = document.getElementsByClassName('glance-desc');
         let line = document.getElementsByClassName('line');
@@ -801,6 +801,8 @@
         let contentItem = document.getElementsByClassName('d-content-list-item');
         let dTabItem = document.getElementsByClassName('d-tab-item');
         let tabBtn = document.getElementsByClassName('d-tab-btn');
+        let dTabLine = document.getElementsByClassName('d-tab-line');
+        let slideState = 0;
 
         function slideDiscover(target){
             for(let i = 0; i < listItem.length; i++){
@@ -808,10 +810,12 @@
                     listItem[i].style = 'opacity: 0;';
                     contentItem[i].style = 'opacity: 0;';
                     tabBtn[i].style = 'color: #fff;';
+                    dTabLine[i].style = 'width: 0;';
                 } else {
                     listItem[i].style = 'opacity: 1;';
                     contentItem[i].style = 'opacity: 1; z-index: 5;';
                     tabBtn[i].style = 'color: #ad7b61;';
+                    dTabLine[i].style = 'animation: lineWidth 5s linear both; background-color: #ad7b61;';
                 }
             }
         }
@@ -823,7 +827,14 @@
             });
         }
 
+        setInterval(function(){
+            let nextNum = (slideState + 1) % listItem.length;
+            slideDiscover(nextNum);
+            slideState++;
+        }, 5000);
+
         slideDiscover(0);
+        
         
     </script>
 </body>
