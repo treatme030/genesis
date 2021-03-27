@@ -1,5 +1,5 @@
 # genesis
-<GENESIS 사이트 따라 만들어 보기>
+<GENESIS 사이트 redesign>
 https://www.genesis.com/kr/ko/main.html
 
 1. 브랜드 소개
